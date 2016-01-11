@@ -1,3 +1,17 @@
-Chapter 3, Programming Project 3.2. 
-To solve this problem, create an Eclipse project named Assignment-1-1. 
-When finished, the project should be saved on your sparc.nic.bc.ca server in a folder Assignment-1-1.
+//************************************************
+// File:       Assignment-1-1
+// Author:     India Heisz
+// Date:       18 January 2016
+// Course:     CPS 101
+//
+// PROBLEM STATEMENT: 
+// Chapter 3, Programming Project 3.2.
+// ***Get problem statement from the textbook
+//
+// INPUT: 
+// 
+// OUTPUT: 
+//
+//*************************************************
+
+import java.util.*;
