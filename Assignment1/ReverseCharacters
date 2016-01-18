@@ -35,7 +35,7 @@ public class ReverseCharacters {
 
     //convert it into characters
     for (int i=inputLength; i>0; i--){
-      charArray[i] = input.charAt();
+      charArray[i] = input.charAt(i);
     }
     //makes the stack
     Stack<Character> charStack = new Stack<Character>(); 
