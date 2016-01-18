@@ -23,13 +23,13 @@
 
 import java.util.*;
 
-public interface StackADT<T>
+public interface StackADT<E>
 {
-    public void push(T element);
+    public void push(E item);
 
-    public T pop();
+    public E pop();
 
-    public T peek();
+    public E peek();
  
     public boolean isEmpty();
 
