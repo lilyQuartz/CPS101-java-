@@ -1,0 +1,24 @@
+//************************************************
+// File:       Assignment-1-1
+// Author:     India Heisz
+// Date:       18 January 2016
+// Course:     CPS 101
+//
+// PROBLEM STATEMENT: 
+// HINT: study the example at http://sparc.nic.bc.ca/cps101/help/app/ .
+// Develop a new implementation of StackADT using java ArrayList class from Java API. 
+// The new class should be called ArrayListStack and it should fully implement the StackADT interface.
+// Create a package "testing" that will contain  JUnit tests of your ArrayListStack implementation.
+// Demonstrate that your ArrayListStack class works by using it in PROBLEM 1.
+// Use JavaFX to create GUI that demonstrates that your ArrayListStack works.
+// To solve this problem, create an Eclipse project named Assignment-1-2. 
+// When finished, the project should be saved on your sparc.nic.bc.ca server in a folder Assignment-1-2.
+// ***Get problem statement from the textbook
+//
+// INPUT: 
+// 
+// OUTPUT: 
+//
+//*************************************************
+
+import java.util.*;
