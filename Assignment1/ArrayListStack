@@ -35,11 +35,11 @@ public class ArrayListStack<E> implements StackADT<E>
     }
 
     public E peek(){
-        return stack[top-1];
+        return stack.get(top-1);;
     }
  
     public boolean isEmpty(){
-        return stack.isEmpty;
+        return stack.isEmpty();
     }
 
     public int size(){
