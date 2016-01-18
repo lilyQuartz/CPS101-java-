@@ -18,11 +18,15 @@
 
 import java.util.*;
 
-public void Driver {
+public class Driver
+{
 
-public static void main(String args[]){
+  public static void main(String[] args)
+  {
+    ReverseCharacters foo=new ReverseCharacters();
+    System.out.println(foo.reverseCharacters());
 
-}
+  }
 
 }
 
