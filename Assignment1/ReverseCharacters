@@ -21,7 +21,7 @@ import java.util.*;
 public class ReverseCharacters {
   public ReverseCharacters(){};
   
-  public String reverseCharacters(){
+  public void reverseCharacters(){
     String outputString="";
   
     //scan string from user
@@ -34,9 +34,10 @@ public class ReverseCharacters {
     char[] charArray=new char[inputLength];
 
     //convert it into characters
-    for (int i=inputLength; i>0; i--){
+    for (int i=inputLength-1; i>0; i--){
       charArray[i] = input.charAt(i);
     }
+    
     //makes the stack
     Stack<Character> charStack = new Stack<Character>(); 
  
@@ -48,8 +49,7 @@ public class ReverseCharacters {
     //pop it all into a new string
     while(!charStack.isEmpty()){
       outputString = "" + charStack.pop();
+      System.out.print(outputString);
     }
-
-    return outputString;
   }
 }
