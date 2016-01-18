@@ -1,0 +1,55 @@
+//************************************************
+// File:       Assignment-1-1
+// Author:     India Heisz
+// Date:       18 January 2016
+// Course:     CPS 101
+//
+// PROBLEM STATEMENT: 
+// Chapter 3, Programming Project 3.2.
+// Design and implement an application that reads a sentence from the user and 
+// prints the sentence with the characters of each word backward. Use a stack to
+//  reverse the characters of each word.
+//
+// INPUT: A sentence from the user.
+// 
+// OUTPUT: That sentence backwards.
+//
+//*************************************************
+
+import java.util.*;
+
+public class ReverseCharacters {
+  public ReverseCharacters(){};
+  
+  public String reverseCharacters(){
+    String outputString="";
+  
+    //scan string from user
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Please type your string then press enter.");
+    String input=scan.nextLine();
+    scan.close();
+    
+    int inputLength=input.length();
+    char[] charArray=new char[inputLength];
+
+    //convert it into characters
+    for (int i=inputLength; i>0; i--){
+      charArray[i] = input.charAt();
+    }
+    //makes the stack
+    Stack<Character> charStack = new Stack<Character>(); 
+ 
+    //push it all into a stack
+    for (char myChar : charArray){
+      charStack.push(myChar);
+    }
+
+    //pop it all into a new string
+    while(!charStack.isEmpty()){
+      outputString = "" + charStack.pop();
+    }
+
+    return outputString;
+  }
+}
