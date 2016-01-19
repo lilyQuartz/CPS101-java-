@@ -19,15 +19,15 @@
 
 public interface StackADT<E>
 {
-    public void push(E element);
+  public void push(E element);
 
-    public E pop();
+  public E pop();
 
-    public E peek();
- 
-    public boolean isEmpty();
+  public E peek();
 
-    public int size();
+  public boolean isEmpty();
 
-    public String toString();
+  public int size();
+
+  public String toString();
 }
