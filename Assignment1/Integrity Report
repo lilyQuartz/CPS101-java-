@@ -3,8 +3,10 @@ January 18th 2016
 India Heisz
 CPS 101
 
-Problem 1
+Time taken is 3 hours.
+
+Problem 1 Issues
 Checks should be made to make sure that the user inputs the correct input to the scanner.
 
-Problem 2
+Problem 2 Issues
 There should be exceptions for when the stack is empty and you try to pop.
