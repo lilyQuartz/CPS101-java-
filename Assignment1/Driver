@@ -21,10 +21,9 @@ public class Driver
 
   public static void main(String[] args)
   {
-    ReverseCharacters foo=new ReverseCharacters();
+    ReverseCharacters foo = new ReverseCharacters();
     foo.reverseCharacters();
 
   }
 
 }
-
