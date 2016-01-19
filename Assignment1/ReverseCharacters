@@ -15,31 +15,37 @@
 // OUTPUT: That sentence backwards.
 //
 //*************************************************
-
 import java.util.*;
 
-public class ReverseCharacters {
-  public ReverseCharacters(){};
-  
-  public void reverseCharacters(){
-    String outputString="";
-  
+
+public class ReverseCharacters
+{
+  public ReverseCharacters()
+  {
+  };
+
+  public void reverseCharacters()
+  {
+    String outputString = "";
+
     //scan string from user
-    Scanner scan=new Scanner(System.in);
+    Scanner scan = new Scanner(System.in);
     System.out.println("Please type your string then press enter.");
-    String input=scan.nextLine();
+    String input = scan.nextLine();
     scan.close();
-    
-    int inputLength=input.length();
+
+    int inputLength = input.length();
     ArrayListStack<Character> charArray = new ArrayListStack<Character>();
-    
+
     //convert it into characters
-    for (int i=0; i<inputLength; i++){
+    for (int i = 0; i < inputLength; i++)
+    {
       charArray.push(input.charAt(i));
     }
-    
+
     //pop it all into a new string
-    while(!charArray.isEmpty()){
+    while (!charArray.isEmpty())
+    {
       outputString = "" + charArray.pop();
       System.out.print(outputString);
     }
