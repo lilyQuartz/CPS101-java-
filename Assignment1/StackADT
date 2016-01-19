@@ -21,11 +21,9 @@
 //
 //*************************************************
 
-import java.util.*;
-
 public interface StackADT<E>
 {
-    public void push(E item);
+    public void push(E element);
 
     public E pop();
 
