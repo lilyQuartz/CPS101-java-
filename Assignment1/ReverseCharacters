@@ -31,24 +31,16 @@ public class ReverseCharacters {
     scan.close();
     
     int inputLength=input.length();
-    char[] charArray=new char[inputLength];
-
+    ArrayListStack<Character> charArray = new ArrayListStack<Character>();
+    
     //convert it into characters
-    for (int i=inputLength-1; i>0; i--){
-      charArray[i] = input.charAt(i);
+    for (int i=0; i<inputLength; i++){
+      charArray.push(input.charAt(i));
     }
     
-    //makes the stack
-    Stack<Character> charStack = new Stack<Character>(); 
- 
-    //push it all into a stack
-    for (char myChar : charArray){
-      charStack.push(myChar);
-    }
-
     //pop it all into a new string
-    while(!charStack.isEmpty()){
-      outputString = "" + charStack.pop();
+    while(!charArray.isEmpty()){
+      outputString = "" + charArray.pop();
       System.out.print(outputString);
     }
   }
