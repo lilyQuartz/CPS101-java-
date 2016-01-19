@@ -16,15 +16,14 @@
 //
 //*************************************************
 
-import java.util.*;
-
 public class Driver
 {
 
   public static void main(String[] args)
   {
-    System.out.println(foo.reverseCharacters());
+    ReverseCharacters foo=new ReverseCharacters();
     foo.reverseCharacters();
+
   }
 
 }
