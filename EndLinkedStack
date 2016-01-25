@@ -1,1 +1,24 @@
+//************************************************
+// File:       Assignment-2-1
+// Author:     India Heisz
+// Date:       25 January 2016
+// Course:     CPS 101
+//
+// PROBLEM STATEMENT: 
+// Complete the solution to the iterative maze solver so that your solution marks the successful path.
+// Modify the program so that it uses jsjf.LinkedStack implementation of StackADT.
+//
+// Develop a new dynamic implementation of StackADT using the LinearNode class. The new class should be called EndLinkedStack .
+// This implementation contains only the top instance variable. There is no count instance variable.
+// Also, the top of the stack should be at the end of the linked list.
+// Create a package "testing" that will contain  JUnit tests of your EndLinkedStack implementation.
+// Demonstrate that your EndLinkedStack class works by using it in PROBLEM 1.
+//
+// INPUT: ?????******
+// 
+// OUTPUT: ?????******
+//
+//*************************************************
+EndLinkedStack extends LinearNode{
 
+}
