@@ -1,3 +1,5 @@
+// *******************Am I supposed to erase all the count??
+
 package jsjf;
 
 import jsjf.exceptions.*;
@@ -14,19 +16,16 @@ public class LinkedStack<T> implements StackADT<T>
     private int count;  
     private LinearNode<T> top; 
 
-    /**
-     * Creates an empty stack.
-     */
+    // Creates an empty stack.
     public LinkedStack()
     {
         count = 0;
         top = null;
     }
 
-    /**
-     * Adds the specified element to the top of this stack.
-     * @param element element to be pushed on stack
-     */
+     // Adds the specified element to the top of this stack.
+     // @param element element to be pushed on stack
+    
     public void push(T element)
     {
         LinearNode<T> temp = new LinearNode<T>(element);
@@ -60,35 +59,34 @@ public class LinkedStack<T> implements StackADT<T>
      * @return element on top of stack
      * @throws EmptyCollectionException if the stack is empty  
      */
+     
+     *************************************!!!! Highlight all the stuff in the brackets from this point and below
     public T peek() throws EmptyCollectionException
     {
-        // To be completed as a Programming Project
+        if (isEmpty()) throw new NoSuchElementException("Stack underflow");
+        return first.item; //******************first.item is wrong name
     }
 
-    /**
-     * Returns true if this stack is empty and false otherwise. 
-     * @return true if stack is empty
-     */
+    // Returns true if this stack is empty and false otherwise. 
     public boolean isEmpty()
     {
-        // To be completed as a Programming Project
+         return top == null; //*************Check!
     }
  
-    /**
-     * Returns the number of elements in this stack.
-     * @return number of elements in the stack
-     */
+    // Returns the number of elements in this stack.
+    // @return number of elements in the stack
     public int size()
     {
-        // To be completed as a Programming Project
+        return count;
     }
 
-    /**
-     * Returns a string representation of this stack. 
-     * @return string representation of the stack
-     */
-    public String toString()
+    // Returns a string representation of this stack. 
+    // @return string representation of the stack
+    public String toString() //***********************totes wrong, fix
     {
-        // To be completed as a Programming Project
+        StringBuilder str = new StringBuilder();
+        for (Item item : this)
+            str.append(item + " ");
+        return str.toString();
     }
 }
