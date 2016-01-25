@@ -1,5 +1,3 @@
-// *******************Am I supposed to erase all the count??
-
 package jsjf;
 
 import jsjf.exceptions.*;
